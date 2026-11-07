@@ -1,47 +1,35 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const pageTitle = "My Astro Learning Blog";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+<BaseLayout pageTitle={pageTitle}>
+  <h1>Experimentation Avenue</h1>
 
-    <h1>Experimentation Avenue</h1>
-    <h1>About Me</h1>
-    <h2>... and my new Astro site!</h2>
+  <h2>... and my new Astro site!</h2>
 
-    <p><em>PS: this is where i will be exploring anything random</em></p>
+  <p><em>PS: this is where i will be exploring anything random</em></p>
 
-    <p>
-      I am working through Astro's introductory tutorial. This is the second
-      page on my website, and it's the first one I built myself!
-    </p>
+  <p>
+    I am working through Astro's introductory tutorial. This is the second page
+    on my website, and it's the first one I built myself!
+  </p>
 
-    <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
-    </p>
-    <h1>Let's start rocking with astro</h1>
-    <p>poorly formatted html document</p>
-    <p>
-      Series of Blogs and rumblings
-      <ul>
-        <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-        <li><a href="/posts/post-4/">Post 4</a></li>
-        <li><a href="/posts/post-5/">Post 5</a></li>
-      </ul>
-    </p>
-  </body>
-</html>
+  <p>
+    This site will update as I complete more of the tutorial, so keep checking
+    back and see how my journey is going!
+  </p>
+  <h1>Let's start rocking with astro</h1>
+  <p>poorly formatted html document</p>
+  <p>
+    Series of Blogs and rumblings
+    <ul>
+      <li><a href="/posts/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+      <li><a href="/posts/post-4/">Post 4</a></li>
+      <li><a href="/posts/post-5/">Post 5</a></li>
+    </ul>
+  </p>
+</BaseLayout>

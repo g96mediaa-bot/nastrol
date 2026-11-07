@@ -1,0 +1,48 @@
+---
+// const platforms = [
+//   "github",
+//   "linkedin",
+//   "x",
+//   "facebook",
+//   "tiktok",
+//   "instagram",
+//   "mastadon",
+//   "flikr",
+//   "youtube"
+// ];
+// const username = "g96mediaa-bot";
+import Social from "./Social.astro";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+  }
+</style>
+
+<footer>
+  <Social platform="twitter" username="g96mediaa-bot" />
+  <Social platform="github" username="g96mediaa-bot" />
+  <Social platform="youtube" username="g96mediaa-bot" />
+  <Social platform="instagram" username="g96mediaa-bot" />
+  <Social platform="x" username="g96mediaa-bot" />
+  <Social platform="youtube" username="g96mediaa-bot" />
+  <Social platform="tiktok" username="g96mediaa-bot" />
+  <!-- <p>
+    Learn more about our work on
+    <ul>
+      {
+        platforms.map((platform) => (
+          <li class="skill">
+            <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+  </p> -->
+</footer>
