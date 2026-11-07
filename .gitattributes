@@ -1,0 +1,36 @@
+
+# 1. Handle line endings automatically for all text files
+* text=auto eol=lf
+
+# 2. Explicitly enforce LF (Unix) line endings for code & configurations
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf diff=markdown
+#
+# # 3. Explicitly enforce CRLF (Windows) line endings for specific formats
+*.bat text eol=crlf
+*.cmd text eol=crlf
+#
+# # 4. Lock down binary assets so Git does not corrupt or diff them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+#
+# # 5. Git LFS Configurations (Uncomment if using LFS)
+*.psd filter=lfs diff=lfs merge=lfs -text
+ *.mp4 filter=lfs diff=lfs merge=lfs -text
+#
+# # 6. Exclude internal files from release zip/tarball exports
+.gitignore export-ignore
+.gitattributes export-ignore
+# /tests export-ignore
+
+*.gitattributes linguist-language=gitattributes
+*.gitattributes linguist-detectable=true
+*.gitattributes linguist-documentation=false
